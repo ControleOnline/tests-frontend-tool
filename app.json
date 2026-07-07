@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Smoke Atlas",
+    "slug": "tests-frontend-tool",
+    "version": "1.0.0",
+    "platforms": ["android", "ios", "web"],
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark"
+  }
+}
