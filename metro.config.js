@@ -8,7 +8,18 @@ const appNodeModules = path.resolve(projectRoot, 'node_modules');
 const workspaceNodeModules = path.resolve(projectRoot, '..', 'node_modules');
 const shimsRoot = path.resolve(projectRoot, 'src', 'shims');
 const shimAliases = {
-  '@store': path.resolve(shimsRoot, 'store.js'),
+  '@env': path.resolve(projectRoot, 'config', 'env.local.js'),
+  '@store': path.resolve(
+    projectRoot,
+    'node_modules',
+    '@controleonline',
+    'ui-common',
+    'src',
+    'react',
+    'stores',
+    'index.js',
+  ),
+  '@stores': path.resolve(shimsRoot, 'store.js'),
   '@react-navigation/native': path.resolve(shimsRoot, 'navigation.js'),
   '@controleonline/ui-common/src/react/components/MessageService': path.resolve(
     shimsRoot,
