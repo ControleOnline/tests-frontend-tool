@@ -1,10 +1,10 @@
 # tests-frontend-tool
 
-Frontend Expo/Metro em JavaScript para consumir o `index.json` publicado pela API de smoke tests.
+Frontend Expo/Metro em JavaScript para consumir o índice publicado pela API de smoke tests.
 
 ## O que ele faz
 
-- lê `GET /tests/index.json`
+- lê `GET /tests`
 - mostra tipos, suites, testes, etapas e estados
 - autentica a sessão com `@controleonline/ui-login`
 - carrega screenshots por URL autenticada

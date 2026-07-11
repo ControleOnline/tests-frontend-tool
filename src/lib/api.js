@@ -47,7 +47,7 @@ async function readErrorMessage(response) {
 }
 
 export async function loadSmokeIndex() {
-  return await uiCommonApi.fetch('/tests/index.json', {});
+  return await uiCommonApi.fetch('/tests', {});
 }
 
 export async function loadArtifactBlob(config, artifact) {

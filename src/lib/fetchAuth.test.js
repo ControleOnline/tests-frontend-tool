@@ -9,14 +9,14 @@ describe('createAuthenticatedFetch', () => {
       htaccessPassword: 'basic-pass',
     });
 
-    await wrappedFetch('https://api.example.test/tests/index.json', {
+    await wrappedFetch('https://api.example.test/tests', {
       headers: new Headers({
         Accept: 'application/json',
       }),
     });
 
     expect(baseFetch).toHaveBeenCalledWith(
-      'https://api.example.test/tests/index.json',
+      'https://api.example.test/tests',
       expect.objectContaining({
         headers: expect.any(Headers),
       }),

@@ -18,8 +18,8 @@ describe('api helpers', () => {
   });
 
   it('builds API URLs without duplicating slashes', () => {
-    expect(buildApiUrl('https://api.example.test/', '/tests/index.json')).toBe(
-      'https://api.example.test/tests/index.json',
+    expect(buildApiUrl('https://api.example.test/', '/tests')).toBe(
+      'https://api.example.test/tests',
     );
   });
 
@@ -29,7 +29,7 @@ describe('api helpers', () => {
 
     await expect(loadSmokeIndex()).resolves.toEqual(json);
 
-    expect(uiCommonApi.fetch).toHaveBeenCalledWith('/tests/index.json', {});
+    expect(uiCommonApi.fetch).toHaveBeenCalledWith('/tests', {});
   });
 
   it('loads artifacts as blobs', async () => {
