@@ -10,6 +10,10 @@ const shimsRoot = path.resolve(projectRoot, 'src', 'shims');
 const shimAliases = {
   '@env': path.resolve(projectRoot, 'config', 'env.local.js'),
   '@controleonline/ui-common/src/api': path.resolve(shimsRoot, 'uiCommonApi.js'),
+  '@controleonline/ui-common/src/utils/formatter': path.resolve(
+    shimsRoot,
+    'uiCommonFormatter.js',
+  ),
   '@store': path.resolve(
     projectRoot,
     'node_modules',
