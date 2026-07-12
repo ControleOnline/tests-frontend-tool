@@ -27,7 +27,8 @@ Crie `config/env.local.js` com base em `config/env.local.sample`:
 
 ```js
 const env = {
-  API_ENTRYPOINT: 'https://api.example.test',
+  API_ENTRYPOINT: 'https://s.controleonline.com',
+  DOMAIN: 'https://t.controleonline.com',
   HTACCESS_USER: '',
   HTACCESS_PASSWORD: '',
 };
@@ -57,6 +58,7 @@ O workflow `.github/workflows/web-deploy-web.yml`:
 ## Variáveis esperadas no deploy
 
 - `API_ENTRYPOINT`
+- `DOMAIN`
 - `HTACCESS_USER` e `HTACCESS_PASSWORD` quando o backend estiver protegido por basic auth
 - `FTP_HOST`
 - `FTP_USER`
