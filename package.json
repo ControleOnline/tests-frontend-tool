@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@controleonline/ui-common": "^1.2.70",
-    "@controleonline/ui-tests": "^1.0.0",
+    "@controleonline/ui-tests": "^1.0.1",
     "@controleonline/ui-login": "^1.0.97",
     "axios": "^1.18.1",
     "expo": "~54.0.34",
