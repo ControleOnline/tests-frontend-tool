@@ -9,6 +9,7 @@ const workspaceNodeModules = path.resolve(projectRoot, '..', 'node_modules');
 const shimsRoot = path.resolve(projectRoot, 'src', 'shims');
 const shimAliases = {
   '@env': path.resolve(projectRoot, 'config', 'env.local.js'),
+  '@controleonline/ui-common/src/api': path.resolve(shimsRoot, 'uiCommonApi.js'),
   '@store': path.resolve(
     projectRoot,
     'node_modules',
