@@ -28,13 +28,15 @@ Crie `config/env.local.js` com base em `config/env.local.sample`:
 ```js
 const env = {
   API_ENTRYPOINT: 'https://s.controleonline.com',
-  DOMAIN: 'https://t.controleonline.com',
+  DOMAIN: 'https://admin.controleonline.com',
   HTACCESS_USER: '',
   HTACCESS_PASSWORD: '',
 };
 
 module.exports = { env };
 ```
+
+`DOMAIN` define o `app-domain` enviado para a API. O front continua hospedado em `t.controleonline.com`, mas consome o índice central publicado para `admin.controleonline.com`.
 
 ## Scripts
 

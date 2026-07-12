@@ -17,7 +17,7 @@ jobs:
           cat > ./config/env.local.js <<'EOF'
           const env = {
             API_ENTRYPOINT: 'https://s.controleonline.com',
-            DOMAIN: 'https://t.controleonline.com',
+            DOMAIN: 'https://admin.controleonline.com',
             HTACCESS_USER: '${{ secrets.HTACCESS_USER }}',
             HTACCESS_PASSWORD: '${{ secrets.HTACCESS_PASSWORD }}'
           };
